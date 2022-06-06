@@ -8,6 +8,9 @@ Média de Aproveitamento  Conceito
   Entre 6.0 e 7.5         C
   Entre 4.0 e 6.0         D
   Entre 4.0 e zero        E
+
+O algoritmo deve mostrar na tela as notas, a média, o conceito correspondente
+ e a mensagem “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E.
 """
 
 nota_1 = float(input('Digite sua primeira nota: '))
@@ -16,14 +19,14 @@ nota_2 = float(input('Digite sua segunda nota: '))
 media = (nota_1 + nota_2) / 2
 
 if media > 9:
-    print(f'Parabéns, sua média foi: {media:.2f} e você tirou um A. ')
+    print(f'APROVADO!!! Sua média foi: {media:.2f} e você tirou um A. ')
 elif 7.5 <= media < 9:
-    print(f'Sua média foi: {media:.2f} e você tirou um B. ')
+    print(f'APROVADO!!! Sua média foi: {media:.2f} e você tirou um B. ')
 elif 6 <= media < 7.5:
-    print(f'Sua média foi: {media:.2f} e você tirou um C. ')
+    print(f'APROVADO!!! Sua média foi: {media:.2f} e você tirou um C. ')
 elif 4 <= media < 6:
-    print(f'Sua média foi: {media:.2f} e você tirou um D. ')
+    print(f'REPROVADO!!! Sua média foi: {media:.2f} e você tirou um D. ')
 elif media < 4 or media == 0:
-    print(f'Sua média foi: {media:.2f} e você tirou um E. ')
+    print(f'REPROVADO!!! Sua média foi: {media:.2f} e você tirou um E. ')
 else:
     print('Digite apenas números.')
